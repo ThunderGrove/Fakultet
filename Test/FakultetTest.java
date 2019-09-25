@@ -7,11 +7,12 @@ class FakultetTest {
     @Test
     void fakultet() {
         Fakultet fakultetX = new Fakultet();
+
         assertEquals(0, fakultetX.fakultet(0),"Det er forkert");
         assertEquals(0, fakultetX.fakultet(3),"Det er forkert");
+        assertEquals(0, fakultetX.fakultet(9),"Det er forkert");
+        assertEquals(0, fakultetX.fakultet(81),"Det er forkert");
         assertEquals(-1, fakultetX.fakultet(-10),"Det er forkert");
-
-
 
     }
 }
